@@ -18,7 +18,6 @@ string zFill(string str, int width, char fill = '0')
 int main()
 {
     fast_io();
-    cout << zFill("1111", 10, '*') << '\n';
     cout << zFill("1111", 10, '0') << '\n';
     cout << zFill("1111", 10, '1') << '\n';
     cout << zFill("1111", 10, '%') << '\n';
