@@ -6,17 +6,21 @@ void fast_io()
     cin.tie(NULL);
 }
 
+
+string zFill(string str, int width, char fill = '0')
+{
+    int width_fill = width - static_cast<int>(str.size());
+    for (int i = 0; i < width_fill; i++)
+        str = fill + str;
+    return str;
+}
+
 int main()
 {
     fast_io();
-
-    int test_cases = 1;
-    // cin >> test_cases;
-    while (test_cases--)
-    {
-        cout << test_cases;
-        cout << "Hello github";
-    }
-
+    cout << zFill("1111", 10, '*') << '\n';
+    cout << zFill("1111", 10, '0') << '\n';
+    cout << zFill("1111", 10, '1') << '\n';
+    cout << zFill("1111", 10, '%') << '\n';
     return 0;
 }
