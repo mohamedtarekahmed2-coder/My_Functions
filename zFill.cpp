@@ -15,6 +15,7 @@ int main()
     while (test_cases--)
     {
         cout << test_cases;
+        cout << "Hello github";
     }
 
     return 0;
